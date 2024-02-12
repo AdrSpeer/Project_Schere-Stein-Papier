@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissor</h1>
+      <h3>Choose your weapon</h3>
+    </header>
+    <main>
+      <article class="results"></article>
+      <div class="img-box">
+        <img
+          src="./assets/img/stone-download.png"
+          alt="Stein"
+          onclick="go(event)"
+          id="stone"
+        />
+        <img
+          src="./assets/img/paper-download.png"
+          alt="Papier"
+          onclick="go(event)"
+          id="paper"
+        />
+        <img
+          src="./assets/img/scissors-png.png"
+          alt="Schere"
+          onclick="go(event)"
+          id="scissors"
+        />
+      </div>
+
+      <form onclick="resetGame()">
+        <input type="button" value="reset game" />
+      </form>
+      <div class="counter-box">
+        <h4>Your Count: <span>0</span></h4>
+        <h4>CPU Count: <span id="count">0</span></h4>
+        <h3>Rounds played: <span id="rounds">0</span></h3>
+      </div>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
