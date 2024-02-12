@@ -31,8 +31,8 @@ const go = (event) => {
   rounds.innerText = roundsPlayed;
   //   Abfrage für Unentschieden
   if (userInput === computerInput) {
-    resultsBox.innerHTML += `<h3> You choose: ${userInput}  </h3>`;
-    resultsBox.innerHTML += `<h3> CPU choose: ${computerInput}  </h3>`;
+    resultsBox.innerHTML += `<h3> You choose:  ${userInput}  </h3>`;
+    resultsBox.innerHTML += `<h3> CPU choose:  ${computerInput}  </h3>`;
     resultsBox.innerHTML +=
       "<h3 style='background-color: orange;'> Result: Draw </h3>";
     //   Abfrage für Sieg Spieler
@@ -41,8 +41,8 @@ const go = (event) => {
     (userInput === "scissors" && computerInput === "paper") ||
     (userInput === "paper" && computerInput === "stone")
   ) {
-    resultsBox.innerHTML += `<h3> You choose: ${userInput}  </h3>`;
-    resultsBox.innerHTML += `<h3> CPU choose: ${computerInput}  </h3>`;
+    resultsBox.innerHTML += `<h3> You choose:  ${userInput}  </h3>`;
+    resultsBox.innerHTML += `<h3> CPU choose:  ${computerInput}  </h3>`;
     resultsBox.innerHTML +=
       "<h3 style='background-color: green;'> Result: You win </h3>";
     // Spielstand Counter für den Spieler
@@ -50,8 +50,8 @@ const go = (event) => {
     yourCount.innerText = yourCountNew;
     // Abfrage Sieg CPU
   } else {
-    resultsBox.innerHTML += `<h3> You choose: ${userInput}  </h3>`;
-    resultsBox.innerHTML += `<h3> CPU choose: ${computerInput}  </h3>`;
+    resultsBox.innerHTML += `<h3> You choose:  ${userInput}  </h3>`;
+    resultsBox.innerHTML += `<h3> CPU choose:  ${computerInput}  </h3>`;
     resultsBox.innerHTML +=
       "<h3 style='background-color: red;'> Result: CPU wins </h3>";
     // Spielstand Counter für CPU
